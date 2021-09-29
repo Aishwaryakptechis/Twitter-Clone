@@ -18,6 +18,7 @@ import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -124,10 +125,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'static'
-]
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static'
+# ]
 cloudinary.config(
     cloud_name="dv1havbrv",
     api_key="424497279334247",
@@ -140,5 +141,16 @@ cloudinary.config(
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-STTIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STTIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_URL = '/static/'
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
