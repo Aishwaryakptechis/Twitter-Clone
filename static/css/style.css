@@ -28,10 +28,10 @@ Nav
 	text-align: left;
 	width: 100%;
 	max-width: 600px;
-	border-left: 1px solid rgb(235, 238, 240);
-	border-right: 1px solid rgb(235, 238, 240);
+	border-left: 1px solid #00cdff;
+	border-right: 1px solid #00cdff;
 	box-sizing: border-box;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #00cdff;
 	/*padding: 20px 40px;
 	border-bottom: 1px solid #ccc;***/
 }
@@ -64,7 +64,7 @@ Post
 	display: flex;
 	flex-direction: column;
 	padding: 10px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #00cdff;
 }
 .home .post_form .my_icon {
 	width: 80px;
@@ -162,6 +162,7 @@ Post
 	border-right: 1px solid #00cdff;
 	padding: 20px 40px;
 	list-style: none;
+	border-top: 1px solid #00cdff;
 }
 .post_img {
 	display: block;
