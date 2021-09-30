@@ -15,7 +15,7 @@ def index(request):
     # if the methode is POST
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
-
+        print("hello world")
         # If the form is valid
         if form.is_valid():
             # Yes, Save

@@ -75,7 +75,7 @@
 								src="{{ post.image.url}}" style="width: 100%;"
 							/>
 						{% endif %}
-						</a>
+						
 						<div class="icon_list">
 							<form id="likes-form" action="{% url 'like_post' post.pk %}" method='POST'>
 								{% csrf_token %}
