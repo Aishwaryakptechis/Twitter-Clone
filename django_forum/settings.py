@@ -129,6 +129,12 @@ USE_TZ = True
 # STATICFILES_DIRS = [
 #     BASE_DIR / 'static'
 # ]
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS=[
+     BASE_DIR /'static'
+
+]
 cloudinary.config(
     cloud_name="dv1havbrv",
     api_key="424497279334247",
