@@ -32,6 +32,7 @@ Nav
 	border-right: 1px solid #00cdff;
 	box-sizing: border-box;
 	border-bottom: 1px solid #00cdff;
+	border-top: 1px solid #00cdff;
 	/*padding: 20px 40px;
 	border-bottom: 1px solid #ccc;***/
 }
@@ -144,6 +145,10 @@ Post
 	cursor: pointer;
 	right: 15px;
 	color: white;
+}
+.space {
+	border-left: 1px solid #00cdff;
+	border-right: 1px solid #00cdff;
 }
 .posts {
 	max-width: 600px;
