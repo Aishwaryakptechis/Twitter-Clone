@@ -81,10 +81,23 @@ WSGI_APPLICATION = 'django_forum.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd2eu7bnnf46rcr',
+        'USER': 'dthlioivjtqvrr',
+        'HOST': 'ec2-34-197-135-44.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'PASSWORD': 'a8c08ae3725f96448571c8e7d27987be5c5547ab8279e68641aaef14227cfafc',
     }
 }
 
@@ -138,9 +151,10 @@ STATICFILES_DIRS = (
 cloudinary.config(
     cloud_name="dv1havbrv",
     api_key="424497279334247",
-    api_secret="eTXcP1jAnHi469dre3stPkpBWI4"
+    api_secret="eTXcP1jAnHi469dre3stPkpBWI4",
+    secure = True,
 )
-    
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -157,3 +171,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
