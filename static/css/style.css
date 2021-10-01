@@ -188,8 +188,8 @@ Post
 	position: absolute;
 	top: 40px;
 	right: 15px;
-	border: 1px solid #00cdff;
-	background-color: #00cdff;
+	/* border: 1px solid #00cdff;
+	background-color: #00cdff; */
 	padding: 10px 15px;
 	font-size: 13px;
 	border-radius: 3px;
