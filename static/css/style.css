@@ -248,3 +248,19 @@ Post
 		font-size: 20px;
 	}
 }
+.cancel-anchor .cancel-button{
+	border: 1px solid rgb(29, 161, 242);
+    background-color: rgb(29, 161, 242);
+	width: 20%;
+	margin: 10px;
+	border-radius: 3px;
+	color: white;
+}
+#update-button{
+	border: 1px solid rgb(29, 161, 242);
+    background-color: rgb(29, 161, 242);
+	width: 20%;
+	
+	border-radius: 3px;
+	color: white;
+}
